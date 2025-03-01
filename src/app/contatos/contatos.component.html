@@ -1,0 +1,50 @@
+<mat-card>
+  <mat-card-content>
+
+    <mat-toolbar color="primary">Lista de contatos</mat-toolbar>
+    <div *ngIf="contatos$ | async as pessoa; else loading">
+      <table mat-table [dataSource]="pessoa" class="mat-elevation-z8">
+
+        <ng-container matColumnDef="nome">
+          <th mat-header-cell *matHeaderCellDef> Nome </th>
+          <td mat-cell *matCellDef="let pessoa">{{ pessoa.nome }}</td>
+        </ng-container>
+        <ng-container matColumnDef="endereco">
+          <th mat-header-cell *matHeaderCellDef> Endereço </th>
+          <td mat-cell *matCellDef="let pessoa"> {{ pessoa.endereco }} </td>
+        </ng-container>
+        <ng-container matColumnDef="contato">
+          <th mat-header-cell *matHeaderCellDef> Contato </th>
+          <td mat-cell *matCellDef="let pessoa">
+            <span>
+              {{ pessoa.contato }}<br>
+            </span>
+          </td>
+        </ng-container>
+        <ng-container  matColumnDef="actions">
+          <mat-header-cell *matHeaderCellDef>
+            <button mat-mini-fab color="accent" aria-label="Adicionar pessoa">
+              <mat-icon>add</mat-icon>
+            </button>
+          </mat-header-cell>
+          <mat-cell *matCellDef="let pessoa">
+            <button mat-mini-fab color="primary" aria-label="Editar pessoa">
+              <mat-icon (click)="onAdd()">edit</mat-icon>
+            </button>
+
+            <button mat-mini-fab color="warn" aria-label="Remover pessoa">
+              <mat-icon>delete</mat-icon>
+            </button>
+          </mat-cell>
+        </ng-container>
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+    </div>
+  </mat-card-content>
+  <ng-template #loading>
+    <div class="loading-spinner">
+      <mat-spinner></mat-spinner>
+    </div>
+  </ng-template>
+</mat-card>
