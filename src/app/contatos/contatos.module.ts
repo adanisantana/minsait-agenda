@@ -17,7 +17,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     ContatosComponent,
-
+    
   ],
   imports: [
     CommonModule,

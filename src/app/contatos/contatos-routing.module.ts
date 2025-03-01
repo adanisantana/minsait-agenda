@@ -5,7 +5,8 @@ import { PessoaFormComponent } from './pessoa-form/pessoa-form.component';
 
 const routes: Routes = [
   {path: '' , component: ContatosComponent},
-  {path: 'new' , component: PessoaFormComponent}
+  {path: 'contatos/new' , component: PessoaFormComponent},
+
 ];
 
 @NgModule({

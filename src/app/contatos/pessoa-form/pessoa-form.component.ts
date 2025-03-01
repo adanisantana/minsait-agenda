@@ -1,11 +1,12 @@
 
 import { Component } from '@angular/core';
-import { FormBuilder, FormGroup, FormsModule } from '@angular/forms';
+import { FormBuilder, FormGroup,  ReactiveFormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-pessoa-form',
   standalone:true,
-  imports:[FormsModule],
+  imports:[ReactiveFormsModule],
+
   templateUrl: './pessoa-form.component.html',
   styleUrls: ['./pessoa-form.component.scss'],
 })

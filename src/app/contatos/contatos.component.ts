@@ -8,7 +8,8 @@ import { ActivatedRoute, Router } from '@angular/router';
 @Component({
   selector: 'app-contatos',
   templateUrl: './contatos.component.html',
-  styleUrls: ['./contatos.component.scss']
+  styleUrls: ['./contatos.component.scss'],
+
 })
 export class ContatosComponent implements OnInit{
  contatos$: Observable< Pessoa[]>;
@@ -26,6 +27,6 @@ export class ContatosComponent implements OnInit{
  }
 
  onAdd(){
-  this.router.navigate(['contatos/new'])
+  this.router.navigate(['new'] ,{ queryParams: { form: 'new' } })
  }
 }
