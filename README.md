@@ -1,12 +1,12 @@
-##Agenda de Contatos
+# Agenda de Contatos
 Este projeto é uma aplicação web de agenda de lista de contatos desenvolvida com Angular 16 e Angular Material.
 
-##Funcionalidades
+## Funcionalidades
 Adicionar novos contatos com nome, endereço e informações de contato.
 Listar todos os contatos existentes em uma tabela.
 Interface amigável e responsiva com Angular Material.
 
-##Tecnologias Utilizadas
+## Tecnologias Utilizadas
 Angular 16
 Angular Material
 TypeScript
@@ -39,41 +39,15 @@ Bash
 ng serve
 Abra o navegador e acesse http://localhost:4200/.
 
-Estrutura do Projeto
-agenda-contatos/
-├── src/
-│   ├── app/
-│   │   ├── contatos/
-│   │   │   ├── contatos.component.ts
-│   │   │   ├── contatos.component.html
-│   │   │   ├── contatos.component.scss
-│   │   │   ├── pessoa-form/
-│   │   │   │   ├── pessoa-form.component.ts
-│   │   │   │   ├── pessoa-form.component.html
-│   │   │   │   ├── pessoa-form.component.scss
-│   │   │   ├── services/
-│   │   │   │   ├── contatos.service.ts
-│   │   │   ├── model/
-│   │   │   │   ├── pessoa.ts
-│   │   │   ├── contatos.module.ts
-│   │   │   ├── contatos-routing.module.ts
-│   │   ├── app.module.ts
-│   │   ├── app-routing.module.ts
-│   ├── assets/
-│   ├── environments/
-│   ├── index.html
-│   ├── styles.scss
-├── angular.json
-├── package.json
-├── README.md
 
-##Componentes
+
+## Componentes
 ContatosComponent: Exibe a lista de contatos e o formulário de adição.
 PessoaFormComponent: Formulário para adicionar ou editar contatos.
 Considerações Finais
 Este projeto foi desenvolvido com o objetivo de demonstrar o uso de Angular 16 e Angular Material na criação de uma aplicação de agenda de contatos.
 
-##Próximos Passos
+## Próximos Passos
 Adicionar funcionalidades de  adição, edição e exclusão de contatos.
 Implementar validações de formulário.
 Adicionar testes unitários e de integração.
