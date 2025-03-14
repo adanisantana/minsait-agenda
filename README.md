@@ -40,7 +40,7 @@ Abra o navegador e acesse http://localhost:4200/.
 - ContatosComponent: Exibe a lista de contatos e o formulário de adição.
 - PessoaFormComponent: Formulário para adicionar ou editar contatos.
   
-##Considerações Finais: 
+## Considerações Finais: 
 Este projeto foi desenvolvido com o objetivo de demonstrar o uso de Angular 16 e Angular Material na criação de uma aplicação de agenda de contatos.
 
 ## Próximos Passos
